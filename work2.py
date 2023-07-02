@@ -1,3 +1,5 @@
+#  Workspace tika bost
+
 import datetime
 
 
@@ -41,7 +43,8 @@ def register():
         for user in users:
             data = user.strip().split(",")
             if data[2] == nim or data[4] == username:
-                print("'{}' tersebut telah terpakai, silahkan coba kembali.".format(nim if data[2] == nim else username))
+                print("'{}' tersebut telah terpakai, silahkan coba kembali."
+                      .format(nim if data[2] == nim else username))
                 break
 
         else:
@@ -90,7 +93,7 @@ def show_lainnya(user_data):
     elif choice == "2":
         show_keranjang(user_data, user_data[4])
     elif choice == "3":
-        show_histori(user_data, user_data[3])
+        show_histori(user_data, user_data[4])
     elif choice == "4":
         show_home(user_data)
     elif choice == "5":
@@ -256,24 +259,32 @@ def show_histori(user_data, username):
         histori = file.readlines()
 
     histori_found = False
+    total_harga = 0
 
     for item in histori:
         data = item.strip().split(",")
-        if len(data) >= 6 and data[1] == username:
+        if data[1] == username:
             histori_found = True
-            harga = data[2]
-            tanggal = data[3]
-            waktu = data[4]
-            pembayaran = data[5]
-            print(f"Anda melakukan transaksi sebesar: {harga}")
-            print(f"tanggal: {tanggal}")
-            print(f"waktu: {waktu}")
-            print(f"Via pembayaran: {pembayaran}\n")
+            print(f"Anda melakukan transaksi sebesar: {data[2]}")
+            print(f"tanggal: {data[3]}")
+            print(f"waktu: {data[4]}")
+            print(f"Via pembayaran: {data[5]}\n")
+            harga = int(data[2])
+            total_harga += harga
+            print(f"Total transaksi anda saat ini: Rp.{total_harga}")
 
     if not histori_found:
         print("Anda belum melakukan transaksi apapun. Ayo checkout keranjang belanjaanmu! (tekan enter untuk kembali)")
         input()
         show_home(user_data)
+        return
+
+    print("1. Kembali")
+    choice = input("Pilihan: ")
+    if choice == "1":
+        show_home(user_data)
+    else:
+        print("Pilihan tidak valid.")
 
 
 def show_kantin(user_data, nama_kantin):
