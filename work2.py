@@ -1,4 +1,3 @@
-#  Workspace tika bost
 import datetime
 
 
@@ -63,20 +62,96 @@ def register():
 def show_home(user_data):
     print("\nSelamat datang di Kantin ITTP!")
     print("Mana pilihan kantinmu?")
-    print("1. Kantin DC")
-    print("2. Kantin TT")
-    print("3. Lainnya")
 
-    while True:
+    kantins = set()
+    with open("kantin.txt", "r") as file:
+        for line in file:
+            data = line.strip().split(",")
+            kantins.add(data[1])
+
+    if len(kantins) > 1:
+        print("Pilihan Kantin:")
+        for i, kantin in enumerate(kantins, start=1):
+            print(f"{i}. {kantin}")
+        print(f"{len(kantins) + 1}. Cari nama menu")
+        print(f"{len(kantins) + 2}. Lainnya")
+
+        valid_choice = False
+        while not valid_choice:
+            choice = input("Pilihan: ")
+
+            if choice.isdigit():
+                choice = int(choice)
+                if 1 <= choice <= len(kantins):
+                    selected_kantin = list(kantins)[choice - 1]
+                    show_kantin(user_data, selected_kantin)
+                    return
+                elif choice == len(kantins) + 1:
+                    search_menu(user_data)
+                    return
+                elif choice == len(kantins) + 2:
+                    show_lainnya(user_data)
+                    return
+
+            print("Inputan tidak valid, masukkan ulang pilihanmu:")
+
+    print("Pilihan tidak valid.")
+    show_home(user_data)  # Memanggil kembali fungsi show_home jika pilihan tidak valid
+
+
+def search_menu(user_data):
+    search_keyword = input("Masukkan kata kunci untuk mencari nama menu: ")
+
+    search_results = []
+    with open("kantin.txt", "r") as file:
+        for line in file:
+            data = line.strip().split(",")
+            menu_name = data[4]
+            if search_keyword.lower() in menu_name.lower():
+                search_results.append(data)
+
+    if search_results:
+        print(f"\nBerikut hasil dari '{search_keyword}':")
+        for i, result in enumerate(search_results, start=1):
+            print(f"\n{i}. Nama Menu: {result[4]}")
+            print(f"Harga: {result[5]}")
+            print(f"Nama Warung: {result[3]}")
+            print(f"Lokasi Kantin: {result[2]}")
+
+        print(f"\nTerdapat {len(search_results)} data dari pencarianmu.")
+        print("1. Urutkan data dari harga termurah")
+        print("2. Urutkan data dari harga termahal")
+        print("3. Kembali ke halaman home")
+
         choice = input("Pilihan: ")
         if choice == "1":
-            show_kantin(user_data, "DC")
+            sorted_results = sorted(search_results, key=lambda x: int(x[5]))
+            print(f"\nBerikut harga termurah ke yang termahal dari pencarian '{search_keyword}':")
+            for i, result in enumerate(sorted_results, start=1):
+                print(f"\n{i}. Nama Menu: {result[4]}")
+                print(f"Harga: {result[5]}")
+                print(f"Nama Warung: {result[3]}")
+                print(f"Lokasi Kantin: {result[2]}")
+            input("\nTekan enter untuk kembali ke halaman home.")
+            show_home(user_data)
         elif choice == "2":
-            show_kantin(user_data, "TT")
+            sorted_results = sorted(search_results, key=lambda x: int(x[5]), reverse=True)
+            print(f"\nBerikut harga termahal ke yang termurah dari pencarian '{search_keyword}':")
+            for i, result in enumerate(sorted_results, start=1):
+                print(f"\n{i}. Nama Menu: {result[4]}")
+                print(f"Harga: {result[5]}")
+                print(f"Nama Warung: {result[3]}")
+                print(f"Lokasi Kantin: {result[2]}")
+            input("\nTekan enter untuk kembali ke halaman home.")
+            show_home(user_data)
         elif choice == "3":
-            show_lainnya(user_data)
+            show_home(user_data)
         else:
             print("Pilihan tidak valid.")
+    else:
+        print(f"Maaf, '{search_keyword}' tidak ditemukan. Ketik enter untuk kembali ke halaman home.")
+        input()
+        show_home(user_data)
 
 
 def show_lainnya(user_data):
@@ -96,6 +171,7 @@ def show_lainnya(user_data):
     elif choice == "4":
         show_home(user_data)
     elif choice == "5":
+        print("Terima kasih telah menggunakan program Kantin ITTP kami!")
         exit()
     else:
         print("Pilihan tidak valid.")
