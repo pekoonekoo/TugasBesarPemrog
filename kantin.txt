@@ -33,17 +33,17 @@ TT,Bakso&MieAyamKampus,makanan,bakso urat,15000
 TT,Bakso&MieAyamKampus,makanan,mie ayam biasa,10000
 TT,Bakso&MieAyamKampus,makanan,mie ayam bakso,15000
 
-DC,NEO,Makanan,Nasi Ayam Goreng,10000
-DC,NEO,Makanan,Nasi Ayam Penyet,10000
-DC,NEO,Makanan,Nasi Uduk,10000
-DC,NEO,Makanan,Indomie Ori kuah/goreng,6000
-DC,NEO,Makanan,Indomie telor kuah/goreng,10000
-DC,NEO,Makanan,Nasi Rames,5000
-DC,NEO,Minuman,Es teh,3000
-DC,NEO,Minuman,Air Mineral,4000
-DC,NEO,Minuman,Es Milo,4000
-DC,NEO,Minuman,Es Susu Coklat,4000
-DC,NEO,Minuman,Es Susu Putih,4000
+DC,NEO04,Makanan,Nasi Ayam Goreng,10000
+DC,NEO04,Makanan,Nasi Ayam Penyet,10000
+DC,NEO04,Makanan,Nasi Uduk,10000
+DC,NEO04,Makanan,Indomie Ori kuah/goreng,6000
+DC,NEO04,Makanan,Indomie telor kuah/goreng,10000
+DC,NEO04,Makanan,Nasi Rames,5000
+DC,NEO04,Minuman,Es teh,3000
+DC,NEO04,Minuman,Air Mineral,4000
+DC,NEO04,Minuman,Es Milo,4000
+DC,NEO04,Minuman,Es Susu Coklat,4000
+DC,NEO04,Minuman,Es Susu Putih,4000
 
 
 TT,Angkringan Kampus,Makanan,Nasi Teri,3000
