@@ -1,0 +1,17 @@
+1,TT,PadangBerkah,makanan,nasi telur balado,8000
+2,TT,PadangBerkah,makanan,nasi telur dadar 8000
+3,TT,PadangBerkah,makanan,nasi rendang 12000
+4,TT,PadangBerkah,makanan,nasi lele 10000
+5,TT,PadangBerkah,makanan,nasi tongkol 10000
+6,TT,PadangBerkah,makanan,nasi bandeng 10000
+7,TT,PadangBerkah,makanan,nasi berkedel 8000
+8,TT,PadangBerkah,makanan,nasi ayam goreng 10000
+9,TT,PadangBerkah,makanan,nasi gulai ayam 10000
+10,TT,PadangBerkah,makanan,nasi sayur 5000
+11,TT,PadangBerkah,makanan,nasi putih 2000
+12,TT,PadangBerkah,minuman,teh manis 5000
+13,TT,PadangBerkah,minuman,jeruk anget 4000
+14,TT,PadangBerkah,minuman, es teh 3000
+15,TT,PadangBerkah,minuman, es jeruk 4000
+16,TT,PadangBerkah,minuman, air es 1000
+17,TT,PadangBerkah,minuman,teh tawar 1000
