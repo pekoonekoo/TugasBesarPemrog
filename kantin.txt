@@ -14,26 +14,24 @@
 14,TT,PadangBerkah,minuman, es teh 3000
 15,TT,PadangBerkah,minuman, es jeruk 4000
 16,TT,PadangBerkah,minuman, air es 1000
-17,TT,PadangBerkah,minuman,teh tawar 1000
-
-DC,KantinNeo01,makanan,nasi goreng,10000
-DC,KantinNeo01,makanan,nasi ayam geprek,12000
-DC,KantinNeo01,makanan,nasi rames,7000
-DC,KantinNeo01,makanan,nasi pecel,10000
-DC,KantinNeo01,makanan,nasi magelangan,10000
-DC,KantinNeo01,minuman,esteh,3000
-DC,KantinNeo01,minuman,pop ice,4000
-DC,KantinNeo01,minuman,beng beng drink,5000
-DC,KantinNeo01,minuman,good day,4000
-DC,KantinNeo01,minuman,kopi hitam,3000
-
-TT,Bakso&MieAyamKampus,makanan,bakso biasa,10000
-TT,Bakso&MieAyamKampus,makanan,bakso telur,15000
-TT,Bakso&MieAyamKampus,makanan,bakso urat,15000
-TT,Bakso&MieAyamKampus,makanan,mie ayam biasa,10000
-TT,Bakso&MieAyamKampus,makanan,mie ayam bakso,15000
-TT,Bakso&MieAyamKampus,minuman,teh,3000
-TT,Bakso&MieAyamKampus,minuman,jeruk,4000
-TT,Bakso&MieAyamKampus,minuman,kopi,3000
-TT,Bakso&MieAyamKampus,minuman,susu,4000
-TT,Bakso&MieAyamKampus,minuman,nutrisari,3000
+17,TT,PadangBerkah,minuman,teh tawar1000
+18,DC,KantinNeo01,makanan,nasi goreng,10000
+19,DC,KantinNeo01,makanan,nasi ayam geprek,12000
+20,DC,KantinNeo01,makanan,nasi rames,7000
+21,DC,KantinNeo01,makanan,nasi pecel,10000
+22,DC,KantinNeo01,makanan,nasi magelangan,10000
+23,DC,KantinNeo01,minuman,esteh,3000
+24,DC,KantinNeo01,minuman,pop ice,4000
+25,DC,KantinNeo01,minuman,beng beng drink,5000
+26,DC,KantinNeo01,minuman,good day,4000
+27,DC,KantinNeo01,minuman,kopi hitam,3000
+28,TT,Bakso&MieAyamKampus,makanan,bakso biasa,10000
+29,TT,Bakso&MieAyamKampus,makanan,bakso telur,15000
+30,TT,Bakso&MieAyamKampus,makanan,bakso urat,15000
+31,TT,Bakso&MieAyamKampus,makanan,mie ayam biasa,10000
+32,TT,Bakso&MieAyamKampus,makanan,mie ayam bakso,15000
+33,TT,Bakso&MieAyamKampus,minuman,teh,3000
+34,TT,Bakso&MieAyamKampus,minuman,jeruk,4000
+35,TT,Bakso&MieAyamKampus,minuman,kopi,3000
+36,TT,Bakso&MieAyamKampus,minuman,susu,4000
+37,TT,Bakso&MieAyamKampus,minuman,nutrisari,3000
