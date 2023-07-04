@@ -200,16 +200,9 @@ def show_profil(user_data):
     print(f"Username: {user_data[4]}")
     print(f"Password: {user_data[5]}")
 
-    print("\n1. Edit Profil")
-    print("2. Kembali ke Home")
-
-    choice = input("Pilihan: ")
-    if choice == "1":
-        edit_profil(user_data)
-    elif choice == "2":
-        show_home(user_data)
-    else:
-        print("Pilihan tidak valid.")
+    print("\nTekan enter untuk kembali ke home")
+    input()
+    show_home(user_data)
 
 
 def edit_profil(user_data):
