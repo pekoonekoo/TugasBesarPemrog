@@ -35,3 +35,25 @@
 35,TT,Bakso&MieAyamKampus,minuman,kopi,3000
 36,TT,Bakso&MieAyamKampus,minuman,susu,4000
 37,TT,Bakso&MieAyamKampus,minuman,nutrisari,3000
+38,Dc,nama kantin,menu makan/minum,harga
+39,DC,NEO,Makanan,Nasi Ayam Goreng,10000
+40.DC,NEO,Makanan,Nasi Ayam Penyet,10000
+41,DC,NEO,Makanan,Nasi Uduk,10000
+42,DC,NEO,Makanan,Indomie Ori kuah/goreng,6000
+43,DC,NEO,Makanan,Indomie telor kuah/goreng,10000
+44,DC,NEO,Makanan,Nasi Rames,5000
+45,DC,NEO,Minuman,Es teh,3000
+46,DC,NEO,Minuman,Air Mineral,4000
+47,DC,NEO,Minuman,Es Milo,4000
+48,DC,NEO,Minuman,Es Susu Coklat,4000
+49,DC,NEO,Minuman,Es Susu Putih,4000
+50,TT,Angkringan Kampus,Makanan,Nasi Teri,3000
+51,TT,Angkringan Kampus,Makanan,Nasi Suwir Ayam,9000
+52,TT,Angkringan Kampus,Makanan,Sate Usus,2500
+53,TT,Angkringan Kampus,Makanan,Sate Kulit,2500
+54,TT,Angkringan Kampus,Makanan,Indomie Polos,8000
+55,TT,Angkringan Kampus,Makana,Indomie Telor,9000
+56,TT,Angkringan Kampus,Minuman,Es Cocolatos,4000
+57,TT,Angkringan Kampus,Minuman,Es Nutrisari,4000
+58,TT,Angkringan Kampus,Minuman,Energen,4000
+59,TT,Angkringan Kampus,Minuman, Es Beng Beng Drink,4000
