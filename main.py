@@ -250,6 +250,7 @@ def show_keranjang(user_data, username):
 
     keranjang_found = False
     total_harga = 0
+    total_item = 0
 
     print("\nKeranjang")
     for item in keranjang:
@@ -262,6 +263,7 @@ def show_keranjang(user_data, username):
             print(f"Harga: {data[5]}")
             harga = int(data[5])
             total_harga += harga
+            total_item += 1
             print()
 
     if not keranjang_found:
@@ -270,11 +272,11 @@ def show_keranjang(user_data, username):
         show_home(user_data)
         return
 
-    print(f"Total belanja Anda: {total_harga}")
+    print(f"Total menu di keranjang Anda: {total_item}")
+    print(f"Total harga: {total_harga}")
 
     print("\n1. Checkout")
-    print("2. Edit keranjang")
-    print("3. Kembali")
+    print("2. Kembali")
 
     while True:
         choice = input("Pilihan: ")
@@ -282,47 +284,10 @@ def show_keranjang(user_data, username):
             checkout(username, total_harga)
             break
         elif choice == "2":
-            edit_keranjang(user_data, username)
-            break
-        elif choice == "3":
             show_home(user_data)
             break
         else:
             print("Pilihan tidak valid. Silakan masukkan pilihan yang valid.")
-
-
-def edit_keranjang(user_data, username):
-    with open("keranjang.txt", "r") as file:
-        keranjang = file.readlines()
-
-    keranjang_found = False
-
-    for item in keranjang:
-        data = item.strip().split(",")
-        if data[1] == username:
-            keranjang_found = True
-            print(f"Menu #{item.strip()}")
-
-    if not keranjang_found:
-        print("Keranjang belanja Anda kosong.")
-        input("Tekan enter untuk kembali ke halaman home.")
-        show_home(user_data)
-        return
-
-    while True:
-        menu_choice = input("Menu mana yang ingin dihapus dari keranjang? (masukkan nomor): ")
-        if menu_choice.isdigit():
-            menu_choice = int(menu_choice)
-            if 1 <= menu_choice <= len(keranjang):
-                with open("keranjang.txt", "w") as file:
-                    for item in keranjang:
-                        if item.strip().split(",")[1] != username or int(item.strip().split(",")[0]) != menu_choice:
-                            file.write(item)
-                print("Data berhasil dihapus dan diperbarui kembali. Buka kembali keranjang Anda!")
-                input("Tekan enter untuk kembali ke halaman home.")
-                show_home(user_data)
-                break
-        print("Maaf, inputan tidak valid.")
 
 
 def checkout(user_data, username):
@@ -477,14 +442,14 @@ def show_warung(user_data, nama_kantin, nama_warung):
     for i, kategori in enumerate(kategoris):
         print(f"{i+1}. {kategori}")
 
-    print(f"{len(kategoris)+1}. Kembali ke halaman Home")
+    print(f"{len(kategoris)+1}. Kembali")
 
     choice = input("Pilihan: ")
     if choice.isdigit() and int(choice) in range(1, len(kategoris) + 1):
         kategori = kategoris[int(choice) - 1]
         show_menu(user_data, nama_kantin, nama_warung, kategori)
     elif choice.isdigit() and int(choice) == len(kategoris) + 1:
-        show_home(user_data)
+        show_kantin(user_data, nama_kantin)
     else:
         print("Pilihan tidak valid.")
         show_warung(user_data, nama_kantin, nama_warung)
@@ -516,20 +481,32 @@ def show_menu(user_data, nama_kantin, nama_warung, kategori):
             id_keranjang = "0"
 
     while True:
-        choice = input("Masukkan menu yang ingin ditambahkan ke keranjang: ")
-        if choice.isdigit() and int(choice) in range(1, len(menus) + 1):
-            menu = menus[int(choice) - 1]
-            keranjang.append((id_keranjang, user_data[4], nama_kantin, nama_warung, menu[4], menu[5]))
+        print("Pilihan:")
+        print("1. Tambah menu ke keranjang")
+        print("2. Kembali")
+
+        choice = input("Masukkan pilihan: ")
+        if choice == "1":
+            while True:
+                menu_choice = input("Masukkan menu yang ingin ditambahkan ke keranjang: ")
+                if menu_choice.isdigit() and int(menu_choice) in range(1, len(menus) + 1):
+                    menu = menus[int(menu_choice) - 1]
+                    keranjang.append((id_keranjang, user_data[4], nama_kantin, nama_warung, menu[4], menu[5]))
+                    break
+                else:
+                    print("Maaf, inputan Anda salah. Silakan input ulang.")
             break
+        elif choice == "2":
+            show_warung(user_data, nama_kantin, nama_warung)
+            return
         else:
-            print("Maaf, inputan Anda salah. Silakan input ulang.")
+            print("Maaf, pilihan tidak valid. Silakan input ulang.")
 
     with open("keranjang.txt", "a") as file:
         for item in keranjang:
             file.write(f"{item[0]},{item[1]},{item[2]},{item[3]},{item[4]},{item[5]}\n")
 
     print("Menu berhasil ditambahkan ke keranjang. Cek keranjangmu untuk checkout.")
-
     show_home(user_data)
 
 
