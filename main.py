@@ -149,8 +149,9 @@ def search_menu(user_data):
                 print(f"Harga: {result[5]}")
                 print(f"Nama Warung: {result[2]}")
                 print(f"Lokasi Kantin: {result[1]}")
-                input("\nTekan enter untuk kembali ke halaman home.")
-                show_home(user_data)
+
+            input("\nTekan enter untuk kembali ke halaman home.")
+            show_home(user_data)
         elif choice == "2":
             sorted_results = sorted(search_results, key=lambda x: int(x[5]), reverse=True)
             print(f"\nBerikut harga termahal ke yang termurah dari pencarian '{search_keyword}':")
@@ -159,8 +160,9 @@ def search_menu(user_data):
                 print(f"Harga: {result[5]}")
                 print(f"Nama Warung: {result[2]}")
                 print(f"Lokasi Kantin: {result[1]}")
-                input("\nTekan enter untuk kembali ke halaman home.")
-                show_home(user_data)
+
+            input("\nTekan enter untuk kembali ke halaman home.")
+            show_home(user_data)
         elif choice == "3":
             show_home(user_data)
         else:
