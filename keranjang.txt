@@ -1,0 +1,3 @@
+0,adhett,TT,Padang Berkah,nasi telur balado,8000
+1,adhett,DC,NEO 01,beng beng drink,5000
+2,adhett,TT,Bakso & Mie Ayam Kampus,bakso biasa,10000
