@@ -1,52 +1,52 @@
-1,TT,PadangBerkah,makanan,nasi telur balado,8000
-2,TT,PadangBerkah,makanan,nasi telur dadar 8000
-3,TT,PadangBerkah,makanan,nasi rendang 12000
-4,TT,PadangBerkah,makanan,nasi lele 10000
-5,TT,PadangBerkah,makanan,nasi tongkol 10000
-6,TT,PadangBerkah,makanan,nasi bandeng 10000
-7,TT,PadangBerkah,makanan,nasi berkedel 8000
-8,TT,PadangBerkah,makanan,nasi ayam goreng 10000
-9,TT,PadangBerkah,makanan,nasi gulai ayam 10000
-10,TT,PadangBerkah,makanan,nasi sayur 5000
-11,TT,PadangBerkah,makanan,nasi putih 2000
-12,TT,PadangBerkah,minuman,teh manis 5000
-13,TT,PadangBerkah,minuman,jeruk anget 4000
-14,TT,PadangBerkah,minuman, es teh 3000
-15,TT,PadangBerkah,minuman, es jeruk 4000
-16,TT,PadangBerkah,minuman, air es 1000
-17,TT,PadangBerkah,minuman,teh tawar1000
-18,DC,KantinNeo01,makanan,nasi goreng,10000
-19,DC,KantinNeo01,makanan,nasi ayam geprek,12000
-20,DC,KantinNeo01,makanan,nasi rames,7000
-21,DC,KantinNeo01,makanan,nasi pecel,10000
-22,DC,KantinNeo01,makanan,nasi magelangan,10000
-23,DC,KantinNeo01,minuman,esteh,3000
-24,DC,KantinNeo01,minuman,pop ice,4000
-25,DC,KantinNeo01,minuman,beng beng drink,5000
-26,DC,KantinNeo01,minuman,good day,4000
-27,DC,KantinNeo01,minuman,kopi hitam,3000
-28,TT,Bakso&MieAyamKampus,makanan,bakso biasa,10000
-29,TT,Bakso&MieAyamKampus,makanan,bakso telur,15000
-30,TT,Bakso&MieAyamKampus,makanan,bakso urat,15000
-31,TT,Bakso&MieAyamKampus,makanan,mie ayam biasa,10000
-32,TT,Bakso&MieAyamKampus,makanan,mie ayam bakso,15000
-33,TT,Bakso&MieAyamKampus,minuman,teh,3000
-34,TT,Bakso&MieAyamKampus,minuman,jeruk,4000
-35,TT,Bakso&MieAyamKampus,minuman,kopi,3000
-36,TT,Bakso&MieAyamKampus,minuman,susu,4000
-37,TT,Bakso&MieAyamKampus,minuman,nutrisari,3000
-38,Dc,nama kantin,menu makan/minum,harga
-39,DC,NEO,Makanan,Nasi Ayam Goreng,10000
-40.DC,NEO,Makanan,Nasi Ayam Penyet,10000
-41,DC,NEO,Makanan,Nasi Uduk,10000
-42,DC,NEO,Makanan,Indomie Ori kuah/goreng,6000
-43,DC,NEO,Makanan,Indomie telor kuah/goreng,10000
-44,DC,NEO,Makanan,Nasi Rames,5000
-45,DC,NEO,Minuman,Es teh,3000
-46,DC,NEO,Minuman,Air Mineral,4000
-47,DC,NEO,Minuman,Es Milo,4000
-48,DC,NEO,Minuman,Es Susu Coklat,4000
-49,DC,NEO,Minuman,Es Susu Putih,4000
+1,TT,Padang Berkah,makanan,nasi telur balado,8000
+2,TT,Padang Berkah,makanan,nasi telur dadar,8000
+3,TT,Padang Berkah,makanan,nasi rendang,12000
+4,TT,Padang Berkah,makanan,nasi lele,10000
+5,TT,Padang Berkah,makanan,nasi tongkol,10000
+6,TT,Padang Berkah,makanan,nasi bandeng,10000
+7,TT,Padang Berkah,makanan,nasi berkedel,8000
+8,TT,Padang Berkah,makanan,nasi ayam goreng,10000
+9,TT,Padang Berkah,makanan,nasi gulai ayam,10000
+10,TT,Padang Berkah,makanan,nasi sayur,5000
+11,TT,Padang Berkah,makanan,nasi putih,2000
+12,TT,Padang Berkah,minuman,teh manis,5000
+13,TT,Padang Berkah,minuman,jeruk anget,4000
+14,TT,Padang Berkah,minuman,es teh,3000
+15,TT,Padang Berkah,minuman,es jeruk,4000
+16,TT,Padang Berkah,minuman,air es,1000
+17,TT,Padang Berkah,minuman,teh tawar,1000
+18,DC,NEO 01,makanan,nasi goreng,10000
+19,DC,NEO 01,makanan,nasi ayam geprek,12000
+20,DC,NEO 01,makanan,nasi rames,7000
+21,DC,NEO 01,makanan,nasi pecel,10000
+22,DC,NEO 01,makanan,nasi magelangan,10000
+23,DC,NEO 01,minuman,esteh,3000
+24,DC,NEO 01,minuman,pop ice,4000
+25,DC,NEO 01,minuman,beng beng drink,5000
+26,DC,NEO 01,minuman,good day,4000
+27,DC,NEO 01,minuman,kopi hitam,3000
+28,TT,Bakso & Mie Ayam Kampus,makanan,bakso biasa,10000
+29,TT,Bakso & Mie Ayam Kampus,makanan,bakso telur,15000
+30,TT,Bakso & Mie Ayam Kampus,makanan,bakso urat,15000
+31,TT,Bakso & Mie Ayam Kampus,makanan,mie ayam biasa,10000
+32,TT,Bakso & Mie Ayam Kampus,makanan,mie ayam bakso,15000
+33,TT,Bakso & Mie Ayam Kampus,minuman,teh,3000
+34,TT,Bakso & Mie Ayam Kampus,minuman,jeruk,4000
+35,TT,Bakso & Mie Ayam Kampus,minuman,kopi,3000
+36,TT,Bakso & Mie Ayam Kampus,minuman,susu,4000
+37,TT,Bakso & Mie Ayam Kampus,minuman,nutrisari,3000
+38,DC,NEO 04,makanan,steak,23000
+39,DC,NEO 04,Makanan,Nasi Ayam Goreng,10000
+40,DC,NEO 04,Makanan,Nasi Ayam Penyet,10000
+41,DC,NEO 04,Makanan,Nasi Uduk,10000
+42,DC,NEO 04,Makanan,Indomie Ori kuah/goreng,6000
+43,DC,NEO 04,Makanan,Indomie telor kuah/goreng,10000
+44,DC,NEO 04,Makanan,Nasi Rames,5000
+45,DC,NEO 04,Minuman,Es teh,3000
+46,DC,NEO 04,Minuman,Air Mineral,4000
+47,DC,NEO 04,Minuman,Es Milo,4000
+48,DC,NEO 04,Minuman,Es Susu Coklat,4000
+49,DC,NEO 04,Minuman,Es Susu Putih,4000
 50,TT,Angkringan Kampus,Makanan,Nasi Teri,3000
 51,TT,Angkringan Kampus,Makanan,Nasi Suwir Ayam,9000
 52,TT,Angkringan Kampus,Makanan,Sate Usus,2500
@@ -56,14 +56,14 @@
 56,TT,Angkringan Kampus,Minuman,Es Cocolatos,4000
 57,TT,Angkringan Kampus,Minuman,Es Nutrisari,4000
 58,TT,Angkringan Kampus,Minuman,Energen,4000
-59,TT,Angkringan Kampus,Minuman, Es Beng Beng Drink,4000
-60,dc,kantinbloom sundaneese,makanan,seblak,10000
-61,dc,kantinbloom sundaneese,makanan,omelet,8000
-62,dc,kantinbloom sundaneese,makanan,pop mie,6000
-63,dc,kantinbloom sundaneese,makanan,ayam penyet,8000
-64,dc,kantinbloom sundaneese,makanan,sempol ayam,10000
-65,dc,kantinbloom sundaneese,minuman,es teh,4000
-66,dc,kantinbloom sundaneese,minuman,kopi,6000
-67,dc,kantinbloom sundaneese,minuman,pop ice,5000
-68dc,kantinbloom sundaneese,minuman,milo,6000
-69,dc,kantinbloom sundaneese,minuman,chocolatos,7000
+59,TT,Angkringan Kampus,Minuman,Es Beng Beng Drink,4000
+60,DC,kantinbloom sundaneese,makanan,seblak,10000
+61,DC,kantinbloom sundaneese,makanan,omelet,8000
+62,DC,kantinbloom sundaneese,makanan,pop mie,6000
+63,DC,kantinbloom sundaneese,makanan,ayam penyet,8000
+64,DC,kantinbloom sundaneese,makanan,sempol ayam,10000
+65,DC,kantinbloom sundaneese,minuman,es teh,4000
+66,DC,kantinbloom sundaneese,minuman,kopi,6000
+67,DC,kantinbloom sundaneese,minuman,pop ice,5000
+68,DC,kantinbloom sundaneese,minuman,milo,6000
+69,DC,kantinbloom sundaneese,minuman,chocolatos,7000
